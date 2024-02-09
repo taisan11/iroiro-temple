@@ -8,12 +8,14 @@ import yargsParser from 'yargs-parser'
 import { viaContentsApi } from './github'
 import { afterCreateHook } from './after-create'
 
+
+// https://github.com/taisan11/iroiro-temple
 const directoryName = 'templates'
 const config = {
   directory: directoryName,
   repository: 'iroiro-temple',
   user: 'taisan11',
-  ref: 'main',
+  ref: 'master',
 }
 
 function mkdirp(dir: string) {
